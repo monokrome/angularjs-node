@@ -1,4 +1,3 @@
 (function (undefined) {
-  var window = {location: {href: 'node://'}},
-      jsdom = require('jsdom').jsdom,
-      document = jsdom();
+  module.exports = function (window) {
+    var document = window.document;
